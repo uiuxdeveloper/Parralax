@@ -1,0 +1,35 @@
+// Mixins
+	// Display GNT Bar
+		@mixin displayGNT {
+		   @if $show-GNT-Bar == false {
+		   		body{
+		   			background: none !important;
+		   			position: relative; top: -55px;
+		   		}
+		   		.footer { 
+		   			position: relative; 
+		   			z-index: 10;
+		   			//top: 50px;
+		   		}
+			    #gnt_bar{ 
+			    	top:-55px; 
+			    	//position:absolute !important; 
+			    	//overflow:hidden;
+			    	//margin-top: -300px;
+			    	//z-index: -10;
+
+			    	span{ text-align: center; }
+			    	.gnt_login_error { top: -9999em; }
+
+			    }
+				#gnt_popup{ 
+					top:25% !important; 
+					position:fixed !important;
+
+					.gnt_input a { left: auto; right: 0 !important; }
+				}
+		   }
+		}
+	//
+	//
+//

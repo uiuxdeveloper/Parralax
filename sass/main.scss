@@ -1,0 +1,323 @@
+// Include Compass
+	@import "compass";
+
+// Utilities
+	@import '_variables.scss';
+	@import '_mixins.scss';
+
+// OOCSS
+//   - Object Oriented CSS Objects
+	@import 'oocss/_reset.scss';
+	@import 'oocss/_typography.scss';
+	@import 'oocss/_scaffolding.scss';
+	@import 'oocss/_display.scss';
+	@import 'oocss/_layout.scss';
+	@import 'oocss/_spacing.scss';
+	@import 'oocss/_border.scss';
+
+// Rewrites
+	@import 'rewrites/_rewrites.scss';
+ 
+// Components
+//   - Classes that include references to oocss
+	//@import 'components/_social_media.scss';
+	//@import 'components/_hideaway.scss';						// Hideaway - Custom gAPI, jQuery plugin
+
+// Libraries
+//   - CSS used in third-party jquery plugins
+	//@import 'libraries/_jCarousel.scss';
+	//@import 'libraries/_perfect-scrollbar.scss';
+	//@import 'libraries/_colorbox.scss';
+	//@import 'libraries/tooltipster.scss';
+	//@import 'libraries/_sticky.scss';
+
+// Sprites
+	@import 'sprites/_sprites.scss';
+
+// GNT Bar
+	@include displayGNT;
+
+	#output {
+		width: 1050px;
+		height: 500px;
+		position: relative;
+		z-index: 10000;
+	}
+	#buffer {
+		display: none;
+	}
+// END: GNT Bar
+
+
+
+// Custom Page CSS
+	// Misc
+		.bg_videoBg, .bg_videoBgWrapper, .rc1,
+			.monsters, .rat, .boss
+												{ position:absolute; }
+		.nav, .title, .scroll, .sixGuys, .rc2, 
+			.rc3, .boss, .gotosite
+												{ position:relative; }
+		.moon, .hero, .fog1, .fog2, .monster, 
+		.rc2-title, .title-events, .event1, 
+		.event2, .event3, .event4, .event5,
+		.monster, .btn, .rat
+												{ position: fixed; }
+		.nav-wrapper, .bg_videoBgWrapper, 
+			.bg_videoBg, .scroll, h3, .gotosite
+												{ margin: 0 auto; }
+		.rc1									{ overflow: hidden;}
+
+
+
+		// Top
+			.nav{ 
+				z-index: 10000;
+				width: 100%;
+				top: 15px;
+			}
+				.nav-wrapper{ 
+					a{ float:right; }
+				}
+					.logo{
+						margin: 0 255px 0 240px;
+						float:left !important;
+					}
+					.nav-play{ margin-right: 25px; }
+					.nav-ico, .nav-ico-last{ margin: 10px 5px  0 0; }
+						.nav-ico-last{ margin-right: 25px; }
+		// END: Top
+		//
+		//
+		// Content
+			.heroBanner, .bg_videoBgWrapper{
+				background: url(../img/bg/bg_video.jpg) no-repeat;
+				display: block;
+				width: 100%;
+				height: 850px;
+				top: 55px;
+				position: absolute;
+				overflow: hidden;
+			}
+			.bg_videoOverlay{
+				background: -webkit-linear-gradient(#14172a, rgba(0,0,0,0)); 	// For Safari
+				background: -o-linear-gradient(#14172a, rgba(0,0,0,0)); 		// For Opera 11.1 to 12.0
+				background: -moz-linear-gradient(#14172a, rgba(0,0,0,0)); 		// For Firefox 3.6 to 15
+				background: linear-gradient(#14172a, rgba(0,0,0,0)); 			// Standard syntax
+
+				display: block;
+				width: 100%;
+				height: 200px;
+				position: absolute;
+				bottom: -200px;
+			}
+				
+			.rc1 {
+				display: block;
+				min-height: 852px;
+				top: 55px;
+
+				.title{
+					left: 25px;
+					top: 275px;
+					@include opacity(1);
+				}
+				.scroll{ top: 385px; }
+			}
+
+			.rc2 {
+				height: 2031px;
+				top: -48px;
+
+				.content{ position: relative; }
+
+					.sixGuys{
+						@include opacity(0.1);
+						left: -380px;
+						top: 550px;
+						z-index: 8;
+					}
+					.fog1{
+						background: transparent url(../img/img_fog1.png) no-repeat;
+						text-indent: -1000em;
+						display: block;
+						width: 1825px;
+						height: 780px;
+						top: 420px;
+						z-index: 7;
+					}
+					.rc2-title{
+						left: 17px;
+						z-index: 6;
+					}
+					.event1, .event2, .event3, .event4, .event5 {
+						left: 20px;
+						z-index: 5;
+					}
+					.hero{
+						left: 580px;
+						top: -1385px;
+						z-index: 4;
+					}
+					.btn{
+						left: 75px;
+						top: -1600px;
+						z-index: 10000;
+					}
+					.fog2{
+						top: 420px;
+						z-index: 2;
+					}
+					.monster{
+						top: 950px;
+						z-index: 1;
+					}
+					.moon{
+						left: 485px;
+						top: -2340px;
+						z-index: 1;
+					}
+			}
+
+			.monsters{
+				background: url(../img/img_monsters.jpg) no-repeat;
+				position: fixed;
+				height: 1700px;
+			}
+			
+			.rc3 {
+				top: -176px;
+
+				.rat{
+					top: 30px;
+					z-index: 1;
+				}
+				.boss{
+					display:block;
+					position: relative;
+					left: 880px;
+					top: -200px;
+					z-index: 1;
+				}
+				
+				.carousel{
+					background: url(../img/bg/bg_carouselFrame.png) 0 0 no-repeat;
+					display:block;
+					width: 1052px;
+					height: 588px;
+					position: relative;
+					z-index: 2;
+				}
+					.carousel-clip{
+						position: absolute;
+						top: 40px;
+						left: 35px;
+						z-index: 1;
+					}
+					.carousel-img, .carousel-thmbs{
+						float:left; 
+						position: relative; 
+						top: 53px;
+						z-index: 0;
+					}
+						.carousel-img{
+							left: 44px;
+							height: 515px;
+							overflow:hidden;
+						}
+						.carousel-thmbs{ 
+							left: 44px; 
+
+							li{ line-height: 0; }
+
+							a{ 
+								display:block;
+								height: 99px;
+								border: solid 2px $black; 
+							}
+							a.active{ border-color: $yellow; }
+							
+							img{ @include opacity(0.5); }
+							img:hover{ @include opacity(1); }
+							a.active img{ @include opacity(1);  }
+						}
+			}
+
+			.gotosite{ 
+				left: 15px;
+				z-index: 110002;
+			}
+			.footerWrapper{
+				position: relative; 
+				top: 12850px;
+			}
+				.footer{ 
+					top: 90px; 
+					margin: 0 auto;
+				}
+
+			.mainOverlay {   
+				position: fixed;
+				width: 0;
+				height: 0;
+				background: rgba(0,0,0,.8);
+				top: 0;
+				left: 0;
+				z-index: 110000;
+				padding-bottom: 55px;
+
+				@include opacity(0);
+
+				-webkit-transition: opacity .5s ease-in-out;
+				-moz-transition: opacity .5s ease-in-out;
+				-ms-transition: opacity .5s ease-in-out;
+				-o-transition: opacity .5s ease-in-out;
+				transition: opacity .5s ease-in-out;
+			}
+
+			.gotosite:hover + .mainOverlay {
+				width: 100%;
+				height: 100%;
+				zoom: 1;
+				@include opacity(.8);
+			}
+			//
+			//
+		// END: Content
+		// 
+		//
+		//.footer{
+		//	font-family: $ff_mono;
+		//	width: 100%;
+		//	margin: 0 auto;
+		//}
+		//	.footer-logo{ display: inline-block; }
+		//	.footer-copyright {
+		//		display: inline-block;
+		//		margin: 0 0 0 12px;
+		//		position: relative;
+		//		top: -9px;
+		//		font-size: 12px; 
+		//	}
+		//
+		//
+		// Checkbox
+		//	.css-checkboxes{ margin-left: 8px; }
+		//	.css-checkbox, .css-checkbox-label { 
+		//		float:right;
+		//		display: inline-block; 
+		//		margin: 15px 146px 0 0; 
+		//	}
+		//	.css-checkbox-label{ 
+		//		position: relative;
+		//		top: -7px;
+		//		font-size: 12px;
+		//	}
+		// END: Checkbox
+	//
+	//
+	// Media Queries
+	// Prevent content bg from sliding away when screen size is reduced
+	@media (max-width: 1050px) {
+		.rc1 { background-position: -483px 0 }
+	}

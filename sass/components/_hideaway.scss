@@ -1,0 +1,29 @@
+// Hideaway - Custom gAPI jQuery plugin
+//
+//
+//
+//
+.hideaway{
+	position: fixed;
+	bottom: -12px;
+}
+	.hideaway-wrap{
+		width: 930px;
+		margin: 0 auto;
+		text-align: center;
+		background: transparent url(../img/bg/bg_suggestion-top.png) no-repeat;
+	}
+		.hideaway-tab{
+			position: relative;
+			top: -26px;
+			left: 312px;
+			color: $black;
+			background-color: #ccc;
+		}
+		.hideaway-content{
+			display: none;
+			height: 0;
+			bottom: 11px;
+			position: relative;
+			background: transparent url(../img/bg/bg_suggestion.png) no-repeat;
+		}

@@ -1,0 +1,45 @@
+// Spacing
+	.maa, .mva, .mta { margin-top: auto; }
+	.maa, .mha, .mra { margin-right: auto; }
+	.maa, .mva, .mba { margin-bottom: auto; }
+	.maa, .mha, .mla { margin-left: auto; }
+
+	.ma-m, .mv-m, .mt-m { margin-top: -5px; }
+	.ma-m, .mh-m, .mr-m { margin-right: -5px; }
+	.ma-m, .mv-m, .mb-m { margin-bottom: -5px; }
+	.ma-m, .mh-m, .ml-m { margin-left: -5px; }
+
+	.man, .mvn, .mtn { margin-top: 0 !important; }
+	.man, .mhn, .mrn { margin-right: 0 !important; }
+	.man, .mvn, .mbn { margin-bottom: 0 !important; }
+	.man, .mhn, .mln { margin-left: 0 !important; }
+
+	.mam, .mvm, .mtm { margin-top: 5px; }
+	.mam, .mhm, .mrm { margin-right: 5px; }
+	.mam, .mvm, .mbm { margin-bottom: 5px; }
+	.mam, .mhm, .mlm { margin-left: 5px; }
+
+	.mal, .mvl, .mtl { margin-top: 7px; }
+	.mal, .mhl, .mrl { margin-right: 7px; }
+	.mal, .mvl, .mbl { margin-bottom: 7px; }
+	.mal, .mhl, .mll { margin-left: 7px; }
+
+	.maxl, .mvxl, .mtxl { margin-top: 10px; }
+	.maxl, .mhxl, .mrxl { margin-right: 10px; }
+	.maxl, .mvxl, .mbxl { margin-bottom: 10px; }
+	.maxl, .mhxl, .mlxl { margin-left: 10px; }
+
+	.ma1-5xl, .mv1-5xl, .mt1-5xl { margin-top: 15px; }
+	.ma1-5xl, .mh1-5xl, .mr1-5xl { margin-right: 15px; }
+	.ma1-5xl, .mv1-5xl, .mb1-5xl { margin-bottom: 15px; }
+	.ma1-5xl, .mh1-5xl, .ml1-5xl { margin-left: 15px; }
+
+	.ma2xl, .mv2xl, .mt2xl { margin-top: 20px; }
+	.ma2xl, .mh2xl, .mr2xl { margin-right: 20px; }
+	.ma2xl, .mv2xl, .mb2xl { margin-bottom: 20px; }
+	.ma2xl, .mh2xl, .ml2xl { margin-left: 20px; }
+
+	.pal, .pvl, .ptl { padding-top: 7px; }
+	.pal, .phl, .prl { padding-right: 7px; }
+	.pal, .pvl, .pbl { padding-bottom: 7px; }
+	.pal, .phl, .pll { padding-left: 7px; }

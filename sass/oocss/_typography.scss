@@ -1,0 +1,28 @@
+// Typography
+	h1, h2, h3, h4 { font-weight: normal; color: $white; }
+	h1{ margin: 5px 0 30px 3px; }
+	p{ display: iblock; }
+
+	// Color 
+		.blue{ color: $blue !important; }
+		.green{ color: $green !important; }
+
+	// Font Style
+		.fsi{ font-style: italic; }
+		.fwb{ font-weight: bold; }
+
+	// Text Decoration
+		.tdu{ text-decoration: underline; }
+		.tdn{ text-decoration: none; }
+		.tds{ text-decoration: line-through; }
+
+	// Text Alignment
+		.tal{ text-align: left; }
+		.tac{ text-align: center; }
+
+	// Font Size
+		.fs0-9em { font-size: 0.9em; }
+		.fs1-2em { font-size: 1.2em; }
+
+	// Text Indent
+		.tin { text-indent: 0 !important; }

@@ -1,0 +1,18 @@
+// Social Media
+	// Facebook Share and Like Button
+		.fb {margin-bottom: 30px; }
+		.fb-share { 
+			display: inline-block !important;
+			position: relative; 
+			top: 2px;
+			text-decoration:none !important; 
+		}
+		.fb-share-txt {
+			font-family: $ff_mono; 
+			font-size: 11px; 
+			color: #ECEEF5;
+			position:relative;
+			top:2px;
+			left: 33px;
+		}
+		.fb-share-txt:hover{text-decoration: none;}

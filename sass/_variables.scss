@@ -1,0 +1,41 @@
+// Parameters
+	// Main Navigation
+		$nav-main-justified:	false;
+		$nav-main-sticky: 		false;				// main nav sticks to top of page
+
+	// Layout
+		$is-responsive: 		false;				// is this design responsvie
+		$show-GNT-Bar: 			false;				// positions the GNT Bar off screen
+
+
+		
+// Variables
+	// Colors
+		$black: #000000;
+		$white: #ffffff;
+		$off-white: #cfd1d4;
+		$cream: #cfcfcf;
+		$grey-light: #404040;
+		$grey: #363636;
+		$blue: #004265;
+		$blue-light: #a8f0ff;
+		$blue-drk: #15182b;
+		$orange: #ff5a00;
+		$brown: #783a35;
+		$brown-drk: #271200;
+		$green: #aff776;
+		$teal: #B3E5BF;
+		$yellow: #fce353;
+
+	// Typography
+		$ff_sans-serif: "Noto Sans", Arial, Verdana, sans-serif;
+		$ff_serif: "Della Respira", Georgia,"Times New Roman",Times,serif;
+		$ff_mono: "Klavika",sans-serif;
+		$ff_myriad: "Myriad Pro", Arial, Verdana, sans-serif;
+
+	// Defaults
+		$default-min-width: 	1050px;
+		$default_color: 		$white; 
+		$default_background: 	$blue-drk;
+		$default_font: 			$ff_sans-serif; 
+		$default_font_size:		14px; 

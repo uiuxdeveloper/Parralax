@@ -1,0 +1,30 @@
+// Rewrites
+	html{ 
+		-webkit-font-smoothing: antialiased; 
+		background: $default_background;
+	}
+	* { 
+	   	margin: 0;
+	   	padding: 0; 
+	}
+	body { 
+		color: $default_color; 
+		background: $default_background;
+		font-family: $default_font; 
+		font-size: $default_font_size; 
+		height: 16500px !important;
+		overflow-x: hidden;
+	}
+	.bg_videoBg, .rc1, .rc2, .sixGuys, .boss
+		{ overflow-x:hidden; }
+	video {max-width: 2000px;}
+	img { 
+		border: 0; 
+		outline: none; 
+	}
+	a { text-decoration:none; color: #9f9f9f; }
+		 a:hover { text-decoration:underline; }
+	ul{ 
+		list-style: none;
+	}
+	body,h1,h2,h3,h4,h5,h6,p,div,label,span{text-align:left;}

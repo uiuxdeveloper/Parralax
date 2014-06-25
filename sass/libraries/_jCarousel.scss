@@ -1,0 +1,80 @@
+
+.carousel-wrapper, .carousel-wrapper-large {
+    position: relative;
+}
+.carousel-wrapper .photo-credits, .carousel-wrapper-large .photo-credits {
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    opacity: 0.66;
+    position: absolute;
+    right: 15px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+}
+.carousel-wrapper .photo-credits a, .carousel-wrapper-large .photo-credits a {
+    color: #FFFFFF;
+}
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+.carousel ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20000em;
+}
+.carousel li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+.carousel .carousel-control-prev:hover span, .carousel .carousel-control-next:hover span {
+    display: block;
+}
+.carousel-wrapper .carousel {
+    height: 207px;
+    width: 309px;
+    margin-left: 28px;
+}
+.carousel-wrapper .carousel-control-prev, .carousel-wrapper .carousel-control-next {
+    //background: url("../../img/sprites/global/bg_gray-dark.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    //text-decoration: none;
+    //text-shadow: 0 0 1px #000000;
+    top: 33px;
+}
+.carousel-wrapper .carousel-control-prev {
+    //border-radius: 0 10px 10px 0;
+    left: 5px;
+}
+.carousel-wrapper .carousel-control-next {
+    //border-radius: 10px 0 0 10px;
+    right: 4px;
+}
+.carousel-wrapper-large .carousel {
+    height: 150px;
+    width: 970px;
+}
+.carousel-wrapper-large img {
+    margin-right: 10px;
+}
+.carousel-wrapper-large .carousel-control-prev, .carousel-wrapper-large .carousel-control-next {
+    background: url("../../img/sprites/global/bg_gray-dark.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000000;
+    top: 45px;
+}
+.carousel-wrapper-large .carousel-control-prev {
+    border-radius: 10px 0 0 10px;
+    left: -63px;
+}
+.carousel-wrapper-large .carousel-control-next {
+    border-radius: 0 10px 10px 0;
+    right: -63px;
+}

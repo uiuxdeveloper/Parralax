@@ -1,0 +1,45 @@
+// Sprites
+	.sprite{ 
+		display:block;
+		text-indent:-9999em;
+		overflow:hidden;
+	}
+
+	// Generate Global Sprite
+		$spr-sprite-dimensions: true;
+		$spr-layout:smart;
+		@import "sprites/spr/*.png";
+		@include all-spr-sprites;
+
+			@each $item in sprite-names($spr-sprites){
+				.spr-#{$item} {
+					@extend .sprite
+				}
+			}
+
+		// links with hover and active background
+			.spr-btn_eventDetail {
+				&:hover, &.active { @include spr-sprite(btn_eventDetail-over) } }
+			.spr-btn_fb {
+				&:hover, &.active { @include spr-sprite(btn_fb-over) } }
+			.spr-btn_gotosite {
+				&:hover, &.active { @include spr-sprite(btn_gotosite-over) } }
+			.spr-btn_play {
+				&:hover, &.active { @include spr-sprite(btn_play-over) } }
+			.spr-btn_tw {
+				&:hover, &.active { @include spr-sprite(btn_tw-over) } }
+			.spr-btn_yt {
+				&:hover, &.active { @include spr-sprite(btn_yt-over) } }
+				
+
+	// Animaged Sprite
+	//	$logo-sprite-dimensions: true;
+	//	$logo-layout:vertical;
+	//	@import "sprites/logo/*.png";
+	//	@include all-logo-sprites;
+
+	//		@each $item in sprite-names($logo-sprites){
+	//			.logo-#{$item} {
+	//				@extend .sprite
+	//			}
+	//		}
